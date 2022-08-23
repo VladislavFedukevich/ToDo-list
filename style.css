@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(123, 134, 100), purple);
+    min-height: 100vh;
+    color: white;
+}
+
+header {
+    font-size: 1.6rem;
+}
+
+header,
+form {
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: purple;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: purple;
+    color: white;
+}
+
+.to-do-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    font-size: 2rem;
+}
+
+.to-do-list {
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.addItem,
+.deleteItem {
+    color: white;
+    border: none;
+    padding: 1rem;
+    background: purple;
+    cursor: pointer;
+}
+
+.addItem:hover,
+.deleteItem:hover {
+    background: white;
+    color: purple;
+}
+
+.addItem {
+    background: greenyellow;
+}
+
+.deleteItem {
+    background: orangered;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.toggle {
+    text-decoration: line-through;
+    color: orangered;
+}
